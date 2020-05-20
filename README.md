@@ -1,1 +1,1 @@
-# react-egghead
+# react-egghead tutorial
