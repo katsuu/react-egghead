@@ -4,23 +4,23 @@
   <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
   <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
   <script type="text/babel">
-    function CharacterCount({text}) {
+    const CharacterCount = ({text}) => {
       return (
         <div>
-          {`The text "${text}" has `}
-          {text.length ? <strong>{text.length}</strong> : 'No'}
-          {' characters'}
+          {`The text "${text}" has `} 
+          {text.length ? <strong>{text.length}</strong> : 'no'}
+          {` characters`}
         </div>
       )
     }
 
     const element = (
       <>
-        <CharacterCount text="Hello World" />
-        <CharacterCount text="" />
+        <CharacterCount text="Blah blah blah"/>
+        <CharacterCount text=""/>
       </>
     )
-
-    ReactDOM.render(element, document.getElementById('root'))
+    
+    ReactDOM.render(element, document.getElementById('root'));
   </script>
 </body>
